@@ -6,7 +6,7 @@ import { useEffect, useState, useRef } from 'react';
 const initData = SudoKu.getEasySudoKu();
 
 export default function App() {
-  console.log('renderApp')
+  console.log('renderApp');
   const logo = 'SudoKu';
   const answer = 'AI Answer';
   const [data, setData] = useState(initData);
