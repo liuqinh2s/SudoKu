@@ -1,13 +1,7 @@
-## Running React on Repl.it
+自己手写的一个数独小游戏，使用的工具有：
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+1. replit
+2. react
+3. typescript
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
-
-Using the two in conjunction is one of the fastest ways to build a web app.
-
-### Getting Started
-- Hit run
-- Edit [App.tsx](#src/App.tsx) and watch it live update!
-
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
+用到了我自己发布的npm包：`@liuqinh2s/sudoku-js`，解数独用的是舞蹈链算法。
