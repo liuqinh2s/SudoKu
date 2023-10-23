@@ -33,7 +33,7 @@ jobs:
           # The local path
           path: ./dist/ # optional, default is 
           # The remote path
-          remote_path: /home/liuqinh2s/project/sudoku
+          remote_path: /usr/share/nginx/html/sudoku
           # The remote host
           remote_host: ${{ secrets.SERVER_HOST }}
           # The remote port
