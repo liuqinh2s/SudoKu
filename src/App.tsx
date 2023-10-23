@@ -15,7 +15,9 @@ export default function App() {
     <div style={{display: 'flex', justifyContent: 'space-around', width: '100vw', height: '40px'}}>
       <div style={{ color: '#344861', fontSize: '22px', fontWeight: '600', height: '40px', lineHeight: '40px'}}>{logo}</div>
       <div style={{ color: '#fe9ad4', fontSize: '18px', fontWeight: '600', height: '40px', lineHeight: '40px'}} onClick={()=>{
-    gridBoardRef.current.setData(SudoKu.solve(data));
+    if(gridBoardRef.current){
+      (gridBoardRef.current as any).setData(SudoKu.solve(data));
+    }
       }}>{answer}</div>
       <div style={{ color: '#325aaf', fontSize: '16px', fontWeight: '600', height: '40px', lineHeight: '40px'}} onClick={()=>{
       setData(SudoKu.getEasySudoKu());

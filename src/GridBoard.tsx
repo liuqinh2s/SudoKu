@@ -7,7 +7,7 @@ interface IGridBoard {
   data: Array<Array<number>>;
 }
 
-const _GridBoard = (props: IGridBoard, ref)=> {
+const _GridBoard = (props: IGridBoard, ref: any)=> {
   const { data } = props;
   const [isAIAnswer, setIsAIAnswer] = useState(false);
   const [_data, setData] = useState(data);
@@ -23,7 +23,7 @@ const _GridBoard = (props: IGridBoard, ref)=> {
   useImperativeHandle(ref, () => {
     // 需要将暴露的接口返回出去
     return {
-      setData: (data) => {
+      setData: (data: Array<Array<number>>) => {
         setData(data);
         setIsAIAnswer(true);
       },
